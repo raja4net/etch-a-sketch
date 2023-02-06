@@ -12,15 +12,27 @@
       <header>Etch A Sketch</header>
       <main class="main">
         <div class="input-controls">
-          <input type="color" class="input-color" />
-          <button id="colorMode">Color Mode</button>
-          <button id="ranbowMode">Rainbow Mode</button>
-          <button id="clear">Clear</button>
-          <button id="erase">Erase Screen</button>
-          <div class="block-size">16 x 16</div>
-          <input class="slider" type="range" value="16" min="1" max="64" />
+          <input
+            type="color"
+            id="colorPicker"
+            class="input-color"
+            value="red"
+          />
+          <button id="colorBtn">Color Mode</button>
+          <button id="rainbowBtn">Rainbow Mode</button>
+          <button id="clearBtn">Clear</button>
+          <button id="eraserBtn">Erase</button>
+          <div class="block-size" id="sizeValue">16 x 16</div>
+          <input
+            id="sizeSlider"
+            class="slider"
+            type="range"
+            value="16"
+            min="1"
+            max="64"
+          />
         </div>
-        <div class="grid"></div>
+        <div class="grid" id="grid"></div>
       </main>
     </div>
     <script src="index.js"></script>

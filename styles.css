@@ -1,0 +1,111 @@
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: blanchedalmond;
+}
+
+header {
+  margin-bottom: 3rem;
+  font-size: 2rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  color: rgb(206, 121, 11);
+}
+.main {
+  display: flex;
+  margin: 2rem;
+  justify-content: space-around;
+  gap: 10px;
+
+  margin: 0 auto;
+}
+
+.input-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 8rem;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="color"] {
+  border-radius: 1.5rem;
+  width: 4rem;
+  height: 4rem;
+
+  border: none;
+  padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+  border: none;
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+button {
+  padding: 10px 20px;
+  border: 1px solid brown;
+  border-radius: 5px;
+}
+
+button.active {
+  background-color: var(--primary-dark);
+  color: rgb(145, 102, 102);
+}
+
+button,
+input[type="color"] {
+  transition: transform 0.1s ease-in-out;
+}
+
+button:hover,
+input[type="color"]:hover {
+  transform: scale(1.05);
+}
+
+.block-size {
+  margin-bottom: -2rem;
+  font-size: 1.5rem;
+  color: rgb(206, 121, 11);
+}
+
+input[type="range"] {
+  background-color: rgb(241, 161, 13);
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 10px;
+  border: 1px solid brown;
+  border-radius: 25px;
+  background: orange;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+  margin-top: -5px;
+  background: orange;
+}
+
+.grid {
+  display: grid;
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.grid-element {
+  user-select: none;
+}
